@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Frontend Level 19</title>
+    <link rel="stylesheet" href="lvl19.css">
+</head>
+<body>
+    
+    <div class="container">
+        <div class="left">
+            <div class="front">
+                <img src="cart1-lvl19-removebg-preview.png">
+                <span id="n">0000 0000 0000 0000</span>
+                <h1 id="nm"></h1>
+                <h2 id="date"><span id="l">00</span>/<span id="r">00</span></h2>
+            </div>
+            <div class="back">
+                <img src="cart2-lvl19-removebg-preview.png">
+            </div>
+        </div>
+
+        <div class="right">
+            <label for="name">cardholder name</label>
+            <input type="text" id="name" class="a1" placeholder="e.g. Wade Msi">
+
+            <label for="number">card number</label>
+            <input type="text" id="number" class="a2" placeholder="e.g. 1234 5678 9123 0000">
+            <span id="num">Wrong format, numbers only</span>
+
+            <div class="box">
+                <div class="left-side">
+                    <label>exp. date (mm/yy)</label> <br>
+                    <input type="number" class="a3" id="m" placeholder="MM" min="1" max="12">
+                    <input type="number" class="a4" id="y" placeholder="YY" min="01" max="99"> <br>
+                    <span id="my">Can't be blank</span>
+                </div>
+                <div class="right-side">
+                    <label>cvc</label>
+                    <input type="number" class="a5" id="cvc" placeholder="e.g. 123" min="100" max="999">
+                    <span id="cv">Can't be blank</span>
+                </div>
+            </div>
+            <button id="btn">Confirm</button>
+        </div>
+    </div>
+
+    <script src="lvl19.js"></script>
+</body>
+</html>
